@@ -17,7 +17,8 @@ namespace ProjetoWeb.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] = "Course C# Web MVC";
+            ViewData["Studant"] = "Joel";
 
             return View();
         }
