@@ -11,6 +11,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using ProjetoWeb.Data;
+using ProjetoWeb.Services;
+using ProjetoWeb.Models;
 
 namespace ProjetoWeb
 {
@@ -41,6 +43,8 @@ namespace ProjetoWeb
                     builder.MigrationsAssembly("ProjetoWeb")));
 
             services.AddScoped<SeedingService>();
+
+            services.AddScoped<SellerService>();
 
         }
 
