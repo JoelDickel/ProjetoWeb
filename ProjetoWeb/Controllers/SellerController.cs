@@ -75,7 +75,7 @@ namespace ProjetoWeb.Controllers
             }
             catch (IntegrityException e)
             {
-                return RedirectToAction(nameof(Error), new { message = "Id not found" });
+                return RedirectToAction(nameof(Error), new { message = "Cannot delet seller whit sales" });
             }
         }
 
